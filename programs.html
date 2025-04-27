@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gym - Programs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* Inline CSS langsung di HTML */
+    .program-card:hover {
+      transform: translateY(-10px);
+      transition: 0.4s ease;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-section {
+      background: url('hero-gym.jpg') center/cover no-repeat;
+      height: 60vh;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-section h1 {
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="beranda.html">Fitness Gym</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="beranda.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="bmr.html">BMR Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Join Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Programs Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Training Programs</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Beginner Program</h5>
+              <p class="card-text">Perfect for those starting their fitness journey. Focuses on fundamental movements and endurance.</p>
+              <p><strong>$29 / month</strong></p>
+              <a href="contact.html" class="btn btn-primary">Join Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Weight Loss Program</h5>
+              <p class="card-text">Combination of cardio and strength training to help you shed pounds and feel great.</p>
+              <p><strong>$49 / month</strong></p>
+              <a href="contact.html" class="btn btn-primary">Join Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Muscle Building</h5>
+              <p class="card-text">Targeted strength and hypertrophy workouts designed for muscle growth.</p>
+              <p><strong>$59 / month</strong></p>
+              <a href="contact.html" class="btn btn-primary">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Fitness Gym</h5>
+        <p>Empowering you to achieve your fitness goals. Join our vibrant community today!</p>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="beranda.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h6>Follow Us</h6>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="col-md-3">
+        <h6>Subscribe</h6>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Enter email" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class="border-top border-light">
+    <p class="text-center mb-0">&copy; 2025 Fitness Gym. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

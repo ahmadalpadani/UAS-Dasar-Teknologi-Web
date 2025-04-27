@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Fitness Gym</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .map-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .social-btn {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    #successMessage, #errorMessage {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand" href="beranda.html">Fitness Gym</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="beranda.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="bmr.html">BMR Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Join Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Us Section -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="mb-4" data-aos="fade-up">About Fitness Gym</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+      At Fitness Gym, we are committed to helping individuals lead healthier, stronger, and more active lives. We provide a fully equipped, state-of-the-art fitness facility where members can achieve their fitness goals in a supportive and motivating environment. Whether you’re new to fitness or a seasoned athlete, our gym offers a variety of services designed to meet the diverse needs of our community.
+    </p>
+  </div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Gallery</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <img src="gym1.jpg" alt="Gallery 1" class="gallery-img img-fluid">
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <img src="gym2.jpg" alt="Gallery 2" class="gallery-img img-fluid">
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <img src="gym3.jpg" alt="Gallery 3" class="gallery-img img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location & Map -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2 class="mb-4">Visit Us</h2>
+        <p class="mb-2">Fitness Gym</p>
+        <p>Jl. Kebugaran No. 123, Jakarta, Indonesia</p>
+        <p><i class="bi bi-telephone"></i> +62 853-6206-9242</p>
+        <p><i class="bi bi-envelope"></i> info@fitnessgym.com</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Jakarta%20City%20Center&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <form id="contactForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+
+        <!-- Success & Error Message -->
+        <div id="successMessage" class="alert alert-success mt-3">Your message has been sent successfully!</div>
+        <div id="errorMessage" class="alert alert-danger mt-3">Something went wrong! Please try again later.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Fitness Gym</h5>
+        <p>Empowering you to achieve your fitness goals. Join our vibrant community today!</p>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="beranda.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h6>Follow Us</h6>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="col-md-3">
+        <h6>Subscribe</h6>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Enter email" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class="border-top border-light">
+    <p class="text-center mb-0">&copy; 2025 Fitness Gym. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name === '' || email === '' || message === '') {
+      document.getElementById('errorMessage').style.display = 'block';
+      document.getElementById('successMessage').style.display = 'none';
+    } else {
+      setTimeout(function() {
+        document.getElementById('successMessage').style.display = 'block';
+        document.getElementById('errorMessage').style.display = 'none';
+        document.getElementById('contactForm').reset();
+      }, 1000);
+    }
+  });
+</script>
+
+</body>
+</html>
